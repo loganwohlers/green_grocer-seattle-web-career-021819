@@ -18,7 +18,6 @@ end
 
 def apply_coupons(cart, coupons)
   newcart= {}
-  #apply=false
   coupons.each do |save|
     word=save[:item]
     if cart.has_key?(word)
