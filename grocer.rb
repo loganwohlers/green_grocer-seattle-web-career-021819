@@ -39,8 +39,7 @@ end
 def apply_clearance(cart)
   cart.map do |k, v|
     if cart[k][:clearance]
-      puts "TEST"
-      #cart[k][:price] *= 0.8
+      cart[k][:price] *= 0.8
     else
       v
     end
