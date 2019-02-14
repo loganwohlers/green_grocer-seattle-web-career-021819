@@ -36,7 +36,7 @@ end
   
 
 def apply_clearance(cart)
-  cart.map do |k, v|
+  a=cart.map do |k, v|
     puts v[:clearance]
     if v[:clearance]
       num=(v[:price]* 0.8).round(3)
@@ -48,6 +48,7 @@ def apply_clearance(cart)
       v
     end
   end
+  puts a
 end
 
 def checkout(cart, coupons)
