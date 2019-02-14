@@ -42,7 +42,7 @@ def apply_clearance(cart)
     if cart[k][:clearance]==true
       cart[k][:price] *= 0.8
     else
-      v
+      k,v
     end
   end
     
