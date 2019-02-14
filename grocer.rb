@@ -36,6 +36,7 @@ end
   
 
 def apply_clearance(cart)
+  p cart
   a=cart.map do |k, v|
     puts v[:clearance]
     if v[:clearance]
