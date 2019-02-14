@@ -41,6 +41,7 @@ def apply_clearance(cart)
     if v[:clearance]
       num=(v[:price]* 0.8).round(3)
       v[:price] =num
+      v
     else
       v
     end
