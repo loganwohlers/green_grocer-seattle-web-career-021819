@@ -44,7 +44,6 @@ def apply_clearance(cart)
     else
       v
     end
-    cart
   end
 end
 
