@@ -36,7 +36,7 @@ end
   
 
 def apply_clearance(cart)
-  p cart
+  #sick example of map on a hash
   a=cart.map do |k, v|
     if v[:clearance]
       num=(v[:price]* 0.8).round(3)
