@@ -27,7 +27,7 @@ def apply_coupons(cart, coupons)
         newcart[newword]={price: save[:cost],
         clearance: cart[word][:clearance], count: 1}
       else
-        newcart[newword][:count]+=1
+          newcart[newword][:count]+=1
       end
     end
   end
