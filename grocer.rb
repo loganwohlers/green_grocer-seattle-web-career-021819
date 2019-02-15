@@ -21,7 +21,7 @@ def apply_coupons(cart, coupons)
   coupons.each do |save|
     word=save[:item]
     if cart.has_key?(word)
-      if cart[word][:count]>save[:num]
+      if cart[word][:count]>=save[:num]
         cart[word][:count]-=save[:num]
       end
       newword="#{word} W/COUPON"
