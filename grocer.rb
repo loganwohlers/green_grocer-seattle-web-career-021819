@@ -48,6 +48,12 @@ end
 
 def checkout(cart, coupons)
   newcart=consolidate_cart(cart)
-  p newcart
+  total=0
+  newcart.each |k, v|
+    v.each |k2, v2|
+      total+= v2[:count]*v2[:price]
+    end
+  end
+  total
   
 end
