@@ -47,8 +47,7 @@ def apply_clearance(cart)
 end
 
 def checkout(cart, coupons)
-  newcart=consolidate_cart(cart)
-  newcart2=apply_coupons(newcart, coupons)
+  newcart2=apply_coupons(consolidate_cart(cart), coupons)
 
   total=0.0
   newcart2.each do |k, v|
