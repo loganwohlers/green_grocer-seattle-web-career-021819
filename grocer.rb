@@ -48,6 +48,6 @@ end
 
 def checkout(cart, coupons)
   newcart=consolidate_cart(cart)
-  p newcar
+  p newcart
   
 end
