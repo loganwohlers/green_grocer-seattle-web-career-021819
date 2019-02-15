@@ -49,7 +49,7 @@ end
 def checkout(cart, coupons)
   p coupons
   newcart=apply_clearance(apply_coupons(consolidate_cart(cart), coupons))
-  
+  p newcart
   total=0.0
   newcart.each do |k, v|
     total += v[:price]*v[:count]
