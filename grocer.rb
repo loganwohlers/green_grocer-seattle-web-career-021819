@@ -58,7 +58,7 @@ def checkout(cart, coupons)
   p newcart
   total=0.0
   newcart.each do |k, v|
-    if (k.include?("COUPON")
+    if (k.include?("COUPON"))
       total+=v[:price]
     else
     total += v[:price]*v[:count]
