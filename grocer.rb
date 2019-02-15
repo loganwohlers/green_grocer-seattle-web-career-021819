@@ -24,7 +24,7 @@ def apply_coupons(cart, coupons)
       if cart[word][:count]-save[:num]>=0
         cart[word][:count]-=save[:num]
       else
-        cart[word][:count]=1
+        cart[word][:count]=0
       end
       newword="#{word} W/COUPON"
       if !newcart.has_key?(newword)
