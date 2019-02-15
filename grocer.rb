@@ -62,7 +62,7 @@ def checkout(cart, coupons)
       total+=v[:price]
     else
     total += v[:price]*v[:count]
-  end
+    end
   end
   total
 end
