@@ -46,7 +46,6 @@ def apply_clearance(cart)
       [k,v]
     end
   end
-  p a.to_h
   a.to_h
 end
 
