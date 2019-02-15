@@ -42,12 +42,12 @@ def apply_clearance(cart)
     if v[:clearance]
       num=(v[:price]* 0.8).round(3)
       v[:price] =num
-      v
+      [k,v]
     else
-      v
+      [k,v]
     end
   end
-  p a
+  a.to_h
 end
 
 def checkout(cart, coupons)
