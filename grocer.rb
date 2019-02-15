@@ -51,8 +51,8 @@ def checkout(cart, coupons)
   p newcart
   newcart2=apply_coupons(newcart, coupons)
   p newcart2
-  total=0.0
   
+  total=0.0
   newcart2.each do |k, v|
     v.each do |k2, v2|
       puts v2[:price]
