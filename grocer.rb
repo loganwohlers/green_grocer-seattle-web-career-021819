@@ -54,10 +54,7 @@ def checkout(cart, coupons)
   
   total=0.0
   newcart2.each do |k, v|
-    puts k
-    puts v[:price]
-    v.each do |k2, v2|
-    end
+    total += v[:price]*v[:count]
   end
   total
 end
