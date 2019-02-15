@@ -50,6 +50,7 @@ end
 
 def checkout(cart, coupons)
   p coupons
+  puts ""
   p consolidate_cart(cart)
   puts ""
   newcart=apply_clearance(apply_coupons(consolidate_cart(cart), coupons))
