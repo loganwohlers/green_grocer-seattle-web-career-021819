@@ -46,7 +46,7 @@ def apply_clearance(cart)
       [k,v]
     end
   end
-  a.to_h
+  p a.to_h
 end
 
 def checkout(cart, coupons)
