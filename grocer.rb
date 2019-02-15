@@ -51,7 +51,8 @@ def checkout(cart, coupons)
   total=0.0
   newcart2=apply_coupons(newcart, coupons)
   p newcart2
-  newcart.each do |k, v|
+  
+  newcart2.each do |k, v|
     v.each do |k2, v2|
       total+= v2[:count]*v2[:price]
     end
