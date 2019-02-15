@@ -43,8 +43,7 @@ def apply_clearance(cart)
       v[:price] =num
     end
     [k,v]
-  end
-  a.to_h
+  end.to_h
 end
 
 def checkout(cart, coupons)
